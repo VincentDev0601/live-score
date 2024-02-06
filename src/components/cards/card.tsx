@@ -57,11 +57,13 @@ const ProgressDiv = styled.div`
 const getStatusColor = (statusType: StatusType) => {
   switch (statusType) {
     case StatusType.Finished:
-      return "#10b981";
+      return "#41A853";
     case StatusType.Inprogress:
       return "#E6D320";
     case StatusType.NotStarted:
       return "#9ca3af";
+    case StatusType.Canceled:
+      return "#AF6069";
     default:
       return "#9ca3af";
   }
